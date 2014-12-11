@@ -15,7 +15,6 @@
 @implementation SLKInAppProductManager
 {
     SKProductsRequest * _productsRequest;
-    NSSet * _productIdentifiers;
 }
 
 + (SLKInAppProductManager *)manager
@@ -46,9 +45,7 @@
     }
     va_end(args);
     
-    _productIdentifiers = [NSSet setWithArray:identifiers];
-    
-    _productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:_productIdentifiers];
+    _productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:[NSSet setWithArray:identifiers]];
     _productsRequest.delegate = self;
     [_productsRequest start];
 }
