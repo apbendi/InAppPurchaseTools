@@ -10,6 +10,8 @@
 		B592DAA31A3A06830083C253 /* InAppPurchaseTools.h in Headers */ = {isa = PBXBuildFile; fileRef = B592DAA21A3A06830083C253 /* InAppPurchaseTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B592DAA91A3A06830083C253 /* InAppPurchaseTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B592DA9D1A3A06830083C253 /* InAppPurchaseTools.framework */; };
 		B592DAB01A3A06830083C253 /* InAppPurchaseToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B592DAAF1A3A06830083C253 /* InAppPurchaseToolsTests.m */; };
+		B592DABB1A3A071B0083C253 /* SLKInAppProductManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B592DAB91A3A071B0083C253 /* SLKInAppProductManager.h */; };
+		B592DABC1A3A071B0083C253 /* SLKInAppProductManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B592DABA1A3A071B0083C253 /* SLKInAppProductManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		B592DAA81A3A06830083C253 /* InAppPurchaseToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InAppPurchaseToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B592DAAE1A3A06830083C253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B592DAAF1A3A06830083C253 /* InAppPurchaseToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InAppPurchaseToolsTests.m; sourceTree = "<group>"; };
+		B592DAB91A3A071B0083C253 /* SLKInAppProductManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKInAppProductManager.h; sourceTree = "<group>"; };
+		B592DABA1A3A071B0083C253 /* SLKInAppProductManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKInAppProductManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				B592DAA21A3A06830083C253 /* InAppPurchaseTools.h */,
+				B592DAB91A3A071B0083C253 /* SLKInAppProductManager.h */,
+				B592DABA1A3A071B0083C253 /* SLKInAppProductManager.m */,
 				B592DAA01A3A06830083C253 /* Supporting Files */,
 			);
 			path = InAppPurchaseTools;
@@ -109,6 +115,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B592DABB1A3A071B0083C253 /* SLKInAppProductManager.h in Headers */,
 				B592DAA31A3A06830083C253 /* InAppPurchaseTools.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B592DABC1A3A071B0083C253 /* SLKInAppProductManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +332,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = InAppPurchaseTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -339,6 +348,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = InAppPurchaseTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
