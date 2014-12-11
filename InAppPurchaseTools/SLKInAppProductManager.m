@@ -14,21 +14,20 @@
 
 @implementation SLKInAppProductManager
 {
-    
-SKProductsRequest * _productsRequest;
-RequestProductsCompletionHandler _completionHandler;
-NSSet * _productIdentifiers;
-    
+    SKProductsRequest * _productsRequest;
+    NSSet * _productIdentifiers;
 }
 
-- (id)initWithProductIdentifiers:(NSSet *)productIdentifiers {
++ (SLKInAppProductManager *)manager
+{
+    static dispatch_once_t once;
+    static SLKInAppProductManager* sharedInstance;
     
-    if ((self = [super init])) {
-        
-        // Store product identifiers
-        _productIdentifiers = productIdentifiers;
-    }
-    return self;
+    dispatch_once(&once, ^{
+        sharedInstance = [[self alloc] init];
+    });
+    
+    return sharedInstance;
 }
 
 - (void)loadProductsWithIdentifiers:(NSString *)firstIdentifier, ...

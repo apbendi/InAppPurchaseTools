@@ -22,7 +22,7 @@ typedef void (^RequestProductsCompletionHandler)(BOOL success, NSDictionary * pr
 
 @property (strong, nonatomic) NSDictionary *skProductDictionary;
 
-- (id)initWithProductIdentifiers:(NSSet *)productIdentifiers;
++ (SLKInAppProductManager *)manager;
 - (void)loadProductsWithIdentifiers:(NSString *)firstIdentifier, ... ;
 
 @end
