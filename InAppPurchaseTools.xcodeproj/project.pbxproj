@@ -10,7 +10,7 @@
 		B592DAA31A3A06830083C253 /* InAppPurchaseTools.h in Headers */ = {isa = PBXBuildFile; fileRef = B592DAA21A3A06830083C253 /* InAppPurchaseTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B592DAA91A3A06830083C253 /* InAppPurchaseTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B592DA9D1A3A06830083C253 /* InAppPurchaseTools.framework */; };
 		B592DAB01A3A06830083C253 /* InAppPurchaseToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B592DAAF1A3A06830083C253 /* InAppPurchaseToolsTests.m */; };
-		B592DABB1A3A071B0083C253 /* SLKInAppProductManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B592DAB91A3A071B0083C253 /* SLKInAppProductManager.h */; };
+		B592DABB1A3A071B0083C253 /* SLKInAppProductManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B592DAB91A3A071B0083C253 /* SLKInAppProductManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B592DABC1A3A071B0083C253 /* SLKInAppProductManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B592DABA1A3A071B0083C253 /* SLKInAppProductManager.m */; };
 /* End PBXBuildFile section */
 

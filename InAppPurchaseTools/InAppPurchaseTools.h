@@ -15,5 +15,5 @@ FOUNDATION_EXPORT double InAppPurchaseToolsVersionNumber;
 FOUNDATION_EXPORT const unsigned char InAppPurchaseToolsVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <InAppPurchaseTools/PublicHeader.h>
-
+#import <InAppPurchaseTools/SLKInAppProductManager.h>
 
