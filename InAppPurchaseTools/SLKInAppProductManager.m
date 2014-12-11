@@ -9,6 +9,9 @@
 #import "SLKInAppProductManager.h"
 #import <StoreKit/StoreKit.h>
 
+NSString *const SLKInAppProductManagerProductsDidLoad = @"SLKInAppProductManagerProductsDidLoad";
+NSString *const SLKInAppProductManagerProductLoadFailed = @"SLKInAppProductManagerProductLoadFailed";
+
 @interface SLKInAppProductManager () <SKProductsRequestDelegate>
 @end
 
@@ -67,12 +70,17 @@
     }
     
     self.skProductDictionary = [NSDictionary dictionaryWithObjects:skProducts forKeys:skProductIds];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:SLKInAppProductManagerProductsDidLoad object:self userInfo:self.skProductDictionary];
 }
 
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error {
     
     //NSLog(@"Failed to load list of products: %@", error);
     _productsRequest = nil;
+    
+    NSDictionary *failDictionary = [NSDictionary dictionaryWithObject:error forKey:@"error"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:SLKInAppProductManagerProductLoadFailed object:self userInfo:failDictionary];
 }
 
 @end

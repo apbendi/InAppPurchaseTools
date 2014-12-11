@@ -14,9 +14,8 @@
 #import <Foundation/Foundation.h>
 #import <StoreKit/StoreKit.h>
 
-@class SKProduct;
-
-typedef void (^RequestProductsCompletionHandler)(BOOL success, NSDictionary * products);
+UIKIT_EXTERN NSString *const SLKInAppProductManagerProductsDidLoad;
+UIKIT_EXTERN NSString *const SLKInAppProductManagerProductLoadFailed;
 
 @interface SLKInAppProductManager : NSObject
 
